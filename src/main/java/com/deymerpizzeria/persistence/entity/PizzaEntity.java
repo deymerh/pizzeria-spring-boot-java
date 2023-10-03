@@ -24,12 +24,13 @@ public class PizzaEntity {
 
     @Column(nullable = true, columnDefinition = "Decimal(5,2)")
     private Double price;
-    @Column(columnDefinition = "smallint") // para mysql es "tinyint"
+
+    @Column(columnDefinition = "boolean")
     private Boolean vegetarian;
 
-    @Column(columnDefinition = "smallint") // para mysql es "tinyint"
+    @Column(columnDefinition = "boolean")
     private Boolean vegan;
 
-    @Column(columnDefinition = "smallint", nullable = false) // para mysql es "tinyint"
+    @Column(columnDefinition = "boolean", nullable = false)
     private Boolean available;
 }
